@@ -49,14 +49,6 @@ export default {
       short_name:'TST',
       name: 'Testing Nuxt App',
       lang: 'pt-br'
-    },
-    meta: {
-      name: 'Testing Nuxt App',
-      theme_color: '#428542',
-      author: 'antonio'
-    },
-    icon: {
-      source: './static/icon.png'
     }
   },
 
