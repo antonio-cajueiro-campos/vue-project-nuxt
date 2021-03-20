@@ -58,7 +58,7 @@ export default {
 
     },
     icon: {
-      source: './static/icon.webp'
+      source: './static/icon.png'
     }
   },
 
