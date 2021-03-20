@@ -48,14 +48,12 @@ export default {
     manifest: {
       short_name:'TST',
       name: 'Testing Nuxt App',
-      lang: 'pt-br',
-      start_url: '/'
+      lang: 'pt-br'
     },
     meta: {
       name: 'Testing Nuxt App',
       theme_color: '#428542',
-      author: 'antonio',
-
+      author: 'antonio'
     },
     icon: {
       source: './static/icon.png'
