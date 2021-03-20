@@ -7,8 +7,7 @@ export default {
     title: 'vue-project-nuxt',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'theme-color', content: '#428542' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },,
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
@@ -47,7 +46,19 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      short_name:'TST',
+      name: 'Testing Nuxt App',
+      lang: 'pt-br',
+      start_url: '/'
+    },
+    meta: {
+      name: 'Testing Nuxt App',
+      theme_color: '#428542',
+      author: 'antonio',
+
+    },
+    icon: {
+      source: './static/icon.webp'
     }
   },
 
