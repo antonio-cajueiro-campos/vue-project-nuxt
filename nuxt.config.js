@@ -7,7 +7,7 @@ export default {
     title: 'vue-project-nuxt',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },,
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
@@ -49,6 +49,9 @@ export default {
       short_name:'TST',
       name: 'Testing Nuxt App',
       lang: 'pt-br'
+    },
+    icon: {
+      source: 'static/icon-app.png'
     }
   },
 
