@@ -4,15 +4,8 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - vue-project-nuxt',
-    title: 'vue-project-nuxt',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
-    ],
-    link: [
-      
-    ]
+    title: 'vue-project-nuxt',    
+    link: []
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -30,6 +23,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,7 +42,16 @@ export default {
     manifest: {
       short_name:'TST',
       name: 'Testing Nuxt App',
-      lang: 'pt-br'
+      lang: 'pt-br',
+      start_url: '/'
+    },
+    meta: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      name: 'Testing Nuxt App',
+      author: 'antonio',
+      description: 'site teste',
+      theme_color: '#c00000',
     },
     icon: {
       source: 'static/icon-app.png'
@@ -76,5 +79,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  server: {
+    port: process.env.PORT || 8100, // default: 3000
+    host: '0.0.0.0', // default: localhost,
+    timing: false
   }
 }
